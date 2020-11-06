@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Music player</title>
+    <link rel="stylesheet" href="style.css"/>
+  </head>
+  <body>
+    <main>
+      <div class="container">
+        <div class="img_box">
+          <img id="song-img" class="song-img" src="images/img1.jpeg">
+        </div>
+        
+        
+        <div id="current_song" class="current_song">
+          <audio id="song_player" class"song_player" src="songs/Crowder - Come As You Are.mp3">
+            
+          </audio>
+          <h1 id="current_song-title" class="current_song-title"></h1>
+          
+          <h2 id="current_song-artist" class="current_song-artist"></h2>
+        </div>
+        
+        <div class="btn_box">
+          
+          <!---Prev Button-->
+          <button id="prev-btn" class="prev-btn btn">
+            <svg class="prev-icon">
+              <use xlink:href="images/sprite.svg#icon-controller-fast-backward"></use>
+            </svg>
+          </button>
+          
+          <!---Pause/play Button-->
+          
+          <button id="pause-btn" class="pause-btn btn">
+            
+            <!---Play Icon-->
+            <svg id="play-icon" class="play-icon">
+              <use xlink:href="images/sprite.svg#icon-controller-play"></use>
+            </svg>
+            
+            <!---Pause Icon -->
+            <svg id="pause-icon" class="pause-icon">
+              <use xlink:href="images/sprite.svg#icon-controller-paus"></use>
+            </svg>
+          </button>
+          
+          <!--Nex Button-->
+          <button id="next-btn" class="next-btn btn">
+            <svg id="next-icon" class="next-icon">
+              <use xlink:href="images/sprite.svg#icon-controller-fast-forward"></use>
+            </svg>
+          </button>
+        </div>
+        
+        
+        <div class="next_song">
+          <h1 class="next_song-header">Up Next</h1>
+          <div class="next_song-box">
+            <h1 id="next_song-title" class="next_song-title"></h1>
+            <h2 id="next_song-artist" class="next_song-artist"></h2>
+        </div>
+          
+        </div>
+        
+      </div>
+      
+    </main>
+  </body>
+  <script src="script.js"></script>
+</html>
